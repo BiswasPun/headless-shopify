@@ -53,7 +53,7 @@ async function getThemeSettingsByThemeId(themeId: string) {
     );
 
     const themeSettings = JSON.parse(response.data.asset.value);
-    console.log(themeSettings);
+
     return themeSettings.current;
   } catch (error) {
     console.error("Error getting theme settings");
