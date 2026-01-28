@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-// filepath: /Users/joby.joseph/Documents/projects/headless-shopify-site/src/app/account/login/page.tsx
-
 export default function LoginPage() {
   return (
     <div className="border-box px-5 py-8 lg:px-10 min-h-[60vh] flex items-center justify-center">
