@@ -100,14 +100,6 @@ Contributions are welcome. Please open an issue or submit a PR.
 3. Commit changes
 4. Open a pull request
 
-## Security
-
-If you discover a security issue, please email reachjoby@gmail.com.
-
-## License
-
-MIT. See [LICENSE](LICENSE).
-
 ## Changelog
 
 [Changelog.md](Changelog.md)
