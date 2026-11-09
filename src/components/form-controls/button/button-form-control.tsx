@@ -23,17 +23,18 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const baseStyles =
-      "font-black tracking-wider cursor-pointer transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+      "font-black tracking-wider cursor-pointer transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 enabled:active:translate-y-0 enabled:active:scale-[0.98] enabled:active:shadow-none";
 
+    // Hover styles use `enabled:` so disabled/loading buttons don't react.
     const variants = {
       primary:
-        "bg-black text-white hover:bg-gray-900 hover:shadow-lg disabled:bg-gray-300 disabled:text-gray-500 focus: ring-gray-500",
+        "bg-black text-white enabled:hover:bg-gray-800 enabled:hover:-translate-y-px enabled:hover:shadow-lg disabled:bg-gray-300 disabled:text-gray-500 focus:ring-gray-500",
       secondary:
-        "bg-gray-200 text-black hover:bg-gray-300 disabled:bg-gray-100 disabled:text-gray-400 focus:ring-gray-400",
+        "bg-gray-200 text-black enabled:hover:bg-gray-300 enabled:hover:-translate-y-px enabled:hover:shadow-md disabled:bg-gray-100 disabled:text-gray-400 focus:ring-gray-400",
       outline:
-        "border-2 border-black text-black hover:bg-black hover:text-white disabled:border-gray-300 disabled:text-gray-400 focus:ring-gray-500",
+        "border-2 border-black text-black enabled:hover:bg-black enabled:hover:text-white enabled:hover:-translate-y-px enabled:hover:shadow-lg disabled:border-gray-300 disabled:text-gray-400 focus:ring-gray-500",
       ghost:
-        "text-black hover:bg-gray-100 disabled:text-gray-400 focus:ring-gray-400",
+        "text-black enabled:hover:bg-gray-100 disabled:text-gray-400 focus:ring-gray-400",
     };
 
     const sizes = {
